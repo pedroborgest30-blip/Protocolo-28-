@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Protocolo 28: Emagreça com método, sem dieta maluca</title>
+<meta name="description" content="Guia prático para calcular sua meta, montar o prato sem pesar comida e seguir um plano de 28 dias. Ebook em PDF com cardápio, receitas e checklist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<!-- Pixel Meta / TikTok / Google Analytics: cole aqui os scripts -->
+<style>
+:root{
+  --bg:#f6f8f5;--surface:#ffffff;--ink:#14222a;--muted:#4a5b63;--line:#d9e3dc;
+  --leaf:#1b6e53;--leaf-soft:#e3f0e8;--pink:#e23d5a;--pink-ink:#ffffff;--warn:#fff3f0;
+  color-scheme:light;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1a1d;--surface:#16262a;--ink:#eef4f0;--muted:#a8bbb4;--line:#27403f;--leaf:#4fc08f;--leaf-soft:#173a30;--pink:#ff5d79;--pink-ink:#1a0a0e;--warn:#2a1a1d;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0f1a1d;--surface:#16262a;--ink:#eef4f0;--muted:#a8bbb4;--line:#27403f;--leaf:#4fc08f;--leaf-soft:#173a30;--pink:#ff5d79;--pink-ink:#1a0a0e;--warn:#2a1a1d;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,8.5vw,3.4rem);font-weight:800}
+h2{font-size:clamp(1.6rem,6vw,2.3rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0 0 1em}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:52px 0}
+.alt{background:var(--leaf-soft)}
+.btn{display:block;text-align:center;background:var(--pink);color:var(--pink-ink);font:800 1.1rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;padding:18px 22px;border-radius:14px;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,.18);transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--leaf);outline-offset:3px}
+.micro{font-size:.88rem;color:var(--muted);text-align:center;margin:12px 0 0}
+.hero{padding-top:36px}
+.hero .sub{font-size:1.15rem;color:var(--muted)}
+.cover{margin:28px auto;width:210px;aspect-ratio:3/4;border-radius:6px 14px 14px 6px;background:linear-gradient(160deg,var(--leaf),#0e3f31);color:#fff;padding:22px 18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:-8px 10px 0 var(--pink),0 18px 30px rgba(0,0,0,.25);transform:rotate(-3deg)}
+.cover b{font:800 2.6rem/1 "Bricolage Grotesque",system-ui,sans-serif}
+.cover span{font-size:.95rem;line-height:1.3}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips li{list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.88rem}
+.chips{padding:0}
+.quote{border-left:4px solid var(--pink);padding:4px 0 4px 16px;font-size:1.1rem;margin:20px 0}
+.steps{counter-reset:s;padding:0;margin:24px 0}
+.steps li{list-style:none;counter-increment:s;position:relative;padding:14px 14px 14px 62px;background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--leaf);color:var(--bg);font:800 1rem/34px "Bricolage Grotesque",system-ui,sans-serif;text-align:center}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:.95rem}
+.ben{padding:0;margin:20px 0}
+.ben li{list-style:none;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative}
+.ben li::before{content:"✓";position:absolute;left:4px;color:var(--leaf);font-weight:800}
+.ben b{display:block}
+.ben span{color:var(--muted);font-size:.95rem}
+.calc{background:var(--surface);border:2px dashed var(--leaf);border-radius:16px;padding:20px;margin:22px 0}
+.calc h3{margin-bottom:.2em}
+.calc small{color:var(--muted);display:block;margin-bottom:12px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:430px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td:last-child{font-weight:800;color:var(--leaf);white-space:nowrap}
+.two{display:grid;gap:14px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.box.no{background:var(--warn)}
+.box ul{margin:0;padding-left:20px}
+.box li{margin-bottom:6px}
+.offer{background:var(--surface);border:2px solid var(--leaf);border-radius:20px;padding:26px 22px;text-align:center}
+.price{font:800 3.2rem/1 "Bricolage Grotesque",system-ui,sans-serif;color:var(--pink);margin:6px 0}
+.price small{font-size:1rem;color:var(--muted);font-weight:600;display:block;margin-top:6px}
+.offer ul{text-align:left;padding:0;margin:18px 0}
+.offer li{list-style:none;padding:6px 0 6px 28px;position:relative}
+.offer li::before{content:"✓";position:absolute;left:2px;color:var(--leaf);font-weight:800}
+.guar{display:flex;gap:14px;align-items:center;background:var(--leaf-soft);border-radius:14px;padding:16px;margin-top:22px;text-align:left}
+.guar b{font:800 2rem/1 "Bricolage Grotesque",system-ui,sans-serif;color:var(--leaf)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 16px}
+summary{cursor:pointer;font-weight:600;padding:15px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--pink);font-weight:800}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);padding-bottom:6px}
+footer{padding:34px 0 120px;font-size:.85rem;color:var(--muted);text-align:center}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;align-items:center;gap:12px}
+.sticky .p{font:800 1.15rem/1.1 "Bricolage Grotesque",system-ui,sans-serif;white-space:nowrap}
+.sticky .p small{display:block;font:400 .72rem system-ui;color:var(--muted)}
+.sticky .btn{flex:1;padding:13px 14px;font-size:1rem;box-shadow:none}
+@media(min-width:700px){.two{grid-template-columns:1fr 1fr}.sticky{display:none}footer{padding-bottom:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <h1>Chega de recomeçar toda segunda-feira.</h1>
+  <p class="sub">O Protocolo 28 é o guia passo a passo para calcular sua meta, montar o prato sem pesar comida e seguir um plano de 28 dias que cabe na sua rotina. Sem dieta maluca, sem cortar tudo o que você gosta.</p>
+  <div class="cover" aria-hidden="true"><b>28</b><span>Protocolo 28<br>Emagreça com método, sem dieta maluca</span></div>
+  <a class="btn" data-cta href="#oferta">Quero começar o Protocolo 28</a>
+  <p class="micro">Ebook em PDF · acesso imediato · 7 dias de garantia</p>
+  <ul class="chips"><li>Compra segura pela Kiwify</li><li>Cardápio de 7 dias</li><li>Receitas de até 20 minutos</li></ul>
+</div></header>
+
+<section><div class="wrap">
+  <h2>Se isso já aconteceu com você, não foi falta de força de vontade.</h2>
+  <p>Você começa animada. Na segunda semana a rotina aperta, vem um escorregão, vem a culpa. Aí você pensa “já estraguei tudo” e volta ao ponto de partida.</p>
+  <p>Depois de algumas rodadas disso, fica a sensação de que o problema é você.</p>
+  <p class="quote">Não é. O problema é um método que exige perfeição de quem tem uma vida real.</p>
+  <p>O Protocolo 28 faz o contrário: déficit moderado, comida de verdade e tarefas pequenas, uma semana de cada vez. Um dia ruim vira só um dia ruim, não o fim do plano.</p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>O método em 5 passos</h2>
+  <ol class="steps">
+    <li><b>Calcule o seu número</b><span>Sua meta diária de calorias, com a conta feita à mão e um exemplo completo.</span></li>
+    <li><b>Monte o Prato de 4 Passos</b><span>Metade legumes, um quarto proteína, um quarto carboidrato de verdade e um toque de gordura boa. Sem balança.</span></li>
+    <li><b>Bata a meta de proteína</b><span>Mais saciedade e menos beliscos, com tabela de porções práticas.</span></li>
+    <li><b>Vença os 5 sabotadores</b><span>Fome emocional, fim de semana, álcool, sono ruim e recompensas com comida.</span></li>
+    <li><b>Siga o plano de 28 dias</b><span>Uma tarefa por semana, com checklist e barra de progresso.</span></li>
+  </ol>
+  <a class="btn" data-cta href="#oferta">Quero o método completo</a>
+</div></section>
+
+<section><div class="wrap">
+  <h2>O que você recebe, e o que muda na sua rotina</h2>
+  <ul class="ben">
+    <li><b>Como o corpo realmente emagrece</b><span>Você entende o déficit calórico e para de depender de promessas milagrosas.</span></li>
+    <li><b>Calculadora manual da sua meta</b><span>Fórmula de Mifflin-St Jeor, fator de atividade e déficit de 15% a 20%, sem comer abaixo da sua taxa metabólica basal.</span></li>
+    <li><b>Guia de proteína e fibras</b><span>Tabela de porções para saber exatamente o que colocar no prato.</span></li>
+    <li><b>Prato de 4 Passos</b><span>Adaptações para marmita, restaurante e festa, para o plano caber na sua vida.</span></li>
+    <li><b>Cardápio de 7 dias e lista de compras</b><span>Receitas de até 20 minutos e a lista organizada por seção do mercado.</span></li>
+    <li><b>Plano de 28 dias com checklist</b><span>Você sabe o que fazer em cada semana, sem decidir tudo sozinha.</span></li>
+    <li><b>Bônus: tabela de acompanhamento e perguntas frequentes</b><span>“A balança não desceu, e agora?” e “E se eu escorregar?” respondidas.</span></li>
+  </ul>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>Espie o que tem dentro</h2>
+  <p>Aqui não tem teoria vaga. Veja um trecho real do cálculo que você aprende a fazer no ebook.</p>
+  <div class="calc">
+    <h3>Exemplo: 35 anos, 70 kg, 165 cm, levemente ativa</h3>
+    <small>Estimativas. Cada corpo responde de um jeito.</small>
+    <div class="scroll"><table>
+      <tr><th>Passo</th><th>Conta</th><th>Resultado</th></tr>
+      <tr><td>Taxa metabólica basal</td><td>(10×70) + (6,25×165) − (5×35) − 161</td><td>≈ 1.395 kcal</td></tr>
+      <tr><td>Gasto diário</td><td>1.395 × 1,375</td><td>≈ 1.919 kcal</td></tr>
+      <tr><td>Meta com déficit moderado</td><td>15% a 20% a menos</td><td>≈ 1.535 a 1.631 kcal</td></tr>
+      <tr><td>Proteína por dia</td><td>1,6 a 2,0 g × 70 kg</td><td>112 a 140 g</td></tr>
+    </table></div>
+  </div>
+  <p>No ebook você refaz essa conta com os seus números, em menos de 5 minutos, e já sai sabendo o que comer.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Para quem é, e para quem não é</h2>
+  <div class="two">
+    <div class="box"><h3>É para você se</h3><ul><li>já desistiu de dietas e quer um método que dá para manter</li><li>quer entender o que está fazendo, não só seguir ordens</li><li>tem rotina corrida e precisa de receitas rápidas</li><li>aceita um ritmo gradual e sustentável</li></ul></div>
+    <div class="box no"><h3>Não é para você se</h3><ul><li>procura resultado em 7 dias ou milagre</li><li>quer cortar tudo e passar fome</li><li>tem condição de saúde que exige acompanhamento específico e não vai consultar um profissional</li></ul></div>
+  </div>
+</div></section>
+
+<section class="alt" id="oferta"><div class="wrap">
+  <div class="offer">
+    <h2>Protocolo 28</h2>
+    <p>Ebook completo, em PDF, com acesso imediato</p>
+    <ul>
+      <li>Como o corpo emagrece, sem enrolação</li>
+      <li>Calculadora manual da sua meta, com exemplo</li>
+      <li>Guia de proteína e fibras</li>
+      <li>Prato de 4 Passos</li>
+      <li>Cardápio de 7 dias e lista de compras</li>
+      <li>Os 5 sabotadores e como vencer cada um</li>
+      <li>Plano de 28 dias com checklist</li>
+      <li>Bônus: tabela de acompanhamento e perguntas frequentes</li>
+    </ul>
+    <div class="price">R$ 27,90<small>pagamento único · preço de lançamento</small></div>
+    <a class="btn" data-cta href="#oferta">Quero o Protocolo 28 agora</a>
+    <p class="micro">Pagamento seguro pela Kiwify · acesso imediato por e-mail</p>
+    <div class="guar"><b>7</b><div><strong>7 dias de garantia incondicional.</strong><br>Leia, teste e, se não for para você, peça o reembolso integral. Sem perguntas.</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Já tentei de tudo. Por que esse seria diferente?</summary><p>Porque ele não depende de perfeição. É um déficit moderado com comida de verdade, e o plano já prevê o escorregão: você aprende a voltar ao eixo na refeição seguinte.</p></details>
+  <details><summary>Não tenho tempo para cozinhar.</summary><p>As receitas do cardápio levam até 20 minutos, e há adaptações para marmita e restaurante.</p></details>
+  <details><summary>Preciso contar calorias o tempo todo?</summary><p>Não. Você faz o cálculo da meta uma vez e depois usa o Prato de 4 Passos para montar as refeições sem pesar comida.</p></details>
+  <details><summary>Funciona para mim?</summary><p>O método é baseado em princípios gerais de nutrição e se ajusta aos seus números. Os resultados variam de pessoa para pessoa e dependem da sua constância. Não prometemos um resultado específico.</p></details>
+  <details><summary>É seguro?</summary><p>O ebook usa déficit moderado e orienta a nunca comer abaixo da sua taxa metabólica basal. É um material educativo. Se você tem alguma condição de saúde, está grávida, amamentando ou usa medicamentos, converse antes com seu médico ou nutricionista.</p></details>
+  <details><summary>Como eu recebo?</summary><p>Logo após a confirmação do pagamento, o acesso ao ebook em PDF chega no seu e-mail pela Kiwify.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. É só pedir o reembolso e devolvemos o valor integral.</p></details>
+</div></section>
+
+<section class="alt"><div class="wrap" style="text-align:center">
+  <h2>Daqui a 28 dias, você pode estar com um método na mão em vez de mais uma dieta abandonada.</h2>
+  <p>Comece hoje, com o que você já tem em casa. O primeiro passo leva 5 minutos.</p>
+  <a class="btn" data-cta href="#oferta">Começar o Protocolo 28 por R$ 27,90</a>
+  <p class="micro">7 dias de garantia · acesso imediato</p>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Conteúdo educativo. Não substitui avaliação, diagnóstico ou acompanhamento médico ou nutricional. Os resultados variam de pessoa para pessoa.</p>
+  <p>Suporte: <a href="mailto:lucasborgest30@gmail.com" style="color:inherit">lucasborgest30@gmail.com</a></p>
+  <p>Compra processada pela Kiwify. Termos de uso e política de privacidade disponíveis no checkout.</p>
+</div></footer>
+
+<div class="sticky"><div class="p">R$ 27,90<small>7 dias de garantia</small></div><a class="btn" data-cta href="#oferta">Quero começar</a></div>
+
+<script>
+// Cole aqui o link de checkout da Kiwify:
+var CHECKOUT_URL = "COLE_AQUI_O_LINK_DA_KIWIFY";
+document.querySelectorAll("[data-cta]").forEach(function(a){
+  if(/^https?:\/\//.test(CHECKOUT_URL)){a.href=CHECKOUT_URL;}
+});
+</script>
+</body>
+</html>
